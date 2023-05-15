@@ -17,7 +17,7 @@ void printcsv(float* T, char* nom, int t_max, float pas){
 void nomCsv(float* Tn, int i, int NX){
 	// Nomme et lance la création des images individuelles composant les GIF.
 	char filename[24] = "./resultats/Tn";
-	char indice[5];
+	char indice[6];
 	sprintf(indice, "%d", i);
 	
 	char* csv = ".csv";

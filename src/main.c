@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 		x[i] = i * NX;
 	}
 
-	int T_MAX = 3600; // Durée de l'expérience.
+	int T_MAX = 10800; // Durée de l'expérience.
 	float DT = 1;
 	int NT = T_MAX / DT + 1;
 
