@@ -4,7 +4,7 @@ OBJS := $(SRCS:src/%.c = obj/%.o)
 CFLAGS = -c -Wall
 
 main.exe : $(OBJS)
-	gcc -o bin/$@ $^
+	gcc -o bin/$@ $^ -std=c99 -lm
 
 obj/%.o : src/%.c
 	gcc $(CFLAGS) $<

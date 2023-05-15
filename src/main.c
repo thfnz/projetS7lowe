@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
 	//
 	float LONGUEUR = 2.5; // Projection vecteur métal fenêtre sur le sol.
 	float HAUTEUR = 2.5; // Projetction vecteur métal fenêtre sur le mur.
-	float distanceMetalVitre = pow(pow(LONGUEUR, 2) + pow(HAUTEUR, 2), 0.5);
+	float distanceMetalVitre = sqrtf(pow(LONGUEUR, 2) + pow(HAUTEUR, 2));
 	float DX = 0.1;
 	int NX = distanceMetalVitre / DX;
 	float x[NX]; // Grille spatiale
